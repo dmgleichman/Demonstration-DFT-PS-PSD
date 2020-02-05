@@ -6,5 +6,5 @@
 
 function [x, y] = GetSine(f, varphi, Fs, N)
   y = 0:N;
-  x = sin( 2 * pi * (f/Fs) * y) + varphi;
+  x = sin(( 2 * pi * (f/Fs) * y) + varphi);
 endfunction
