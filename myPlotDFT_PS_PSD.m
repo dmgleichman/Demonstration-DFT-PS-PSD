@@ -7,9 +7,17 @@ T = N/Fs;
 % My DFT
 [X, f] = myGetDFT(x, Fs);
 % Periodogram Power Spectrum
-[px, fpx] = periodogram(x, [], N, Fs, 'centered', 'power');
+
+#[px, fpx] = periodogram(x, [], N, Fs, 'centered', 'power');
+[px, fpx] = periodogram(x, [], N, Fs);
+
+
 % Periodogram ENPSD
-[psdx, fpsdx] = periodogram(x, [], N, Fs, 'centered', 'psd');
+#[psdx, fpsdx] = periodogram(x, [], N, Fs, 'centered', 'psd');
+[psdx, fpsdx] = periodogram(x, [], N, Fs);
+
+
+
 delta_fpsdx = mean(diff(fpsdx));
 
 subplot(2,2,1);plot(t,x,'.-');xlabel('Time (s)');

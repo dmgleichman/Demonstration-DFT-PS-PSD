@@ -1,5 +1,7 @@
 # Demonstration-DFT-PS-PSD
 
+## Doug's Version port to Octave
+
 This is a demonstration to show how to calculate Power Spectra (PS) and Power Spectral Densities (PSD) in real time. We calculate power spectra directly using DFT (or FFT). We calculate power spectral and power spectral densities using the MATLAB function periodogram.
 
 One will see the following phenomena:
