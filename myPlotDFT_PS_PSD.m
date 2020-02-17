@@ -8,12 +8,12 @@ T = N/Fs;
 [X, f] = myGetDFT(x, Fs);
 % Periodogram Power Spectrum
 
-#[px, fpx] = periodogram(x, [], N, Fs, 'centered', 'power');
+%[px, fpx] = periodogram(x, [], N, Fs, 'centered', 'power');
 [px, fpx] = periodogram(x, [], N, Fs);
 
 
 % Periodogram ENPSD
-#[psdx, fpsdx] = periodogram(x, [], N, Fs, 'centered', 'psd');
+%[psdx, fpsdx] = periodogram(x, [], N, Fs, 'centered', 'psd');
 [psdx, fpsdx] = periodogram(x, [], N, Fs);
 
 
